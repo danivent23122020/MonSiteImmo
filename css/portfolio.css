@@ -1,2 +1,59 @@
 /* font-family: 'Playfair Display', serif; */
 /* font-family: "Open Sans", sans-serif; */
+body {
+    display: flex;
+    flex-direction: column;
+}
+.title-portfolio {
+    color: #000;
+    font-size: 60px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin: 70px 0 70px;
+}
+/* setting grid */
+.grid-portfolio {
+    width: 95%;
+    height: auto;
+    max-width: 1700px;
+    min-width: 300px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    justify-content: center;
+}
+.grid-item {
+    height: 250px;
+    cursor: pointer;
+    position: relative;
+    margin: 30px 15px;
+}
+.grid-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.description {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    font-size: 18px;
+}
+.price {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-size: 27px;
+    font-weight: 700;
+}
+@media screen and (max-width: 550px) {
+    .grid-portfolio{
+        grid-template-columns: repeat(auto-fill, 300px);
+    }
+    .title-portfolio {
+    font-size: 40px;
+}
+}
+.slider-portfolio{
+    display: none;
+}
