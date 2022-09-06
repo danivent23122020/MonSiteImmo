@@ -170,12 +170,100 @@ img.active {
     height: 20px;
 }
 
-/* --------------- */
+/* /// settings choix \\\ */
 .choix {
     grid-area: 3 / 1 / 4 / 3;
-    /* background-color: lightgoldenrodyellow; */
+    background-color: #222;
+    color: #f1f1f1;
+    border: 1px solid #000;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
+.choice-title {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+}
+.choix p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+.go-galery {
+    font-size: 22px;
+    display: block;
+    margin: 20px auto 0;
+    width: 300px;
+    padding: 20px;
+    text-decoration: none;
+    border: 1px solid #f1f1f1;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #f1f1f1;
+    transition: all 0.2s ease-in-out;
+}
+.go-galery:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #f1f1f1;
+    color: #222;
+}
+.cont-medias {
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.media {
+    margin: 10px 0;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media img {
+    width: 30px;
+}
+/* /// settings contact \\\ */
 .contact {
     grid-area: 3 / 3 / 4 / 4;
-    /* background-color: lightcyan; */
+    background-color: #f6db51;
+    color: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+.contact h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 70px;
+    padding-left: 50px;
+}
+.contact a img{
+    width: 50px;
+    height: 50px;
+}
+.go-contact{
+    flex-shrink: 0;
+    margin-right: 105px;
+    width: 90px;
+    height: 90px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+.go-contact:hover{
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+/* --------------- */
