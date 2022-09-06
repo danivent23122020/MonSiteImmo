@@ -16,9 +16,10 @@
         <title>Mon site immo</title>
     </head>
     <body>
-        <!-- <h1>mon site immobilier</h1> -->
+        <!-- grid -->
         <div class="grille-accueil">
-            <div class="menu">
+            <!-- navbar -->
+            <nav class="menu">
                 <h2 class="title-menu">Menu</h2>
                 <ul class="list-menu">
                     <li class="item-nav"><a href="/">Accueil</a></li>
@@ -30,10 +31,42 @@
                     </li>
                     <li class="item-nav"><a href="/contact">Contact</a></li>
                 </ul>
+            </nav>
+            <!-- presentation -->
+            <div class="presentation">
+                <img src="./ressources/logo-grec.svg" alt="logo temple grec" />
+                <h1>Agence Héraclès</h1>
+                <p>
+                    Nous vous proposons des biens d'exception, de l'hôtel
+                    particulier au Château.
+                </p>
+                <a href="/informations.html">En savoir plus</a>
             </div>
-            <div class="presentation"></div>
-            <div class="slider"></div>
+            <!-- slider -->
+            <div class="slider">
+                <div class="container-slides">
+                    <img src="./img/img1Slide.jpg" class="active" />
+                    <img src="./img/img2Slide.jpg" />
+                    <img src="./img/img3Slide.jpg" />
+                </div>
+                <div class="cont-btn">
+                    <div class="btn-nav left">
+                        <img
+                            src="./ressources/chevron-gauche.svg"
+                            alt="chevron gauche"
+                        />
+                    </div>
+                    <div class="btn-nav right">
+                        <img
+                            src="./ressources/chevron-droit.svg"
+                            alt="chevron droit"
+                        />
+                    </div>
+                </div>
+            </div>
+            <!-- choix -->
             <div class="choix"></div>
+            <!-- contact -->
             <div class="contact"></div>
         </div>
     </body>
