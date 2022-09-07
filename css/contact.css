@@ -35,7 +35,7 @@ body {
 }
 /* formulaire */
 form {
-    width: 50%;
+    width: 40%;
     margin: 100px auto 50px;
     padding: 20px;
     border-radius: 5px;
@@ -130,7 +130,6 @@ form button:hover {
     .title-check {
         font-size: 20px;
         margin: 0px auto 20px;
-
     }
     .three-contacts {
         width: 50%;
@@ -149,8 +148,8 @@ form button:hover {
         margin: 60px auto 50px;
     }
     form h2 {
-    font-size: 30px;
-}
+        font-size: 30px;
+    }
     .groupe-check {
         display: block;
         font-size: 20px;
