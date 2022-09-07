@@ -44,7 +44,7 @@ body {
     top: -30px;
     right: 0;
     font-size: 27px;
-    font-weight: 700;
+    font-weight: 600;
 }
 @media screen and (max-width: 550px) {
     .grid-portfolio{
