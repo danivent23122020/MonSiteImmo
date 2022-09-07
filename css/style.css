@@ -56,7 +56,7 @@ body {
     border-bottom: 1px solid #000;
 }
 
-.title-menu:hover + .liste-menu {
+.title-menu:hover + .list-menu {
     transition: top 0.2s ease-in-out;
     top: 0px;
 }
@@ -341,7 +341,7 @@ footer {
 
     .slider {
         height: 500px;
-        /* margin: 0 0 500px; */
+        margin: 0 0 500px;
     }
     .choice-title {
         font-size: 28px;
