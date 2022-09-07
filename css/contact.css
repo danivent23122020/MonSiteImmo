@@ -1,0 +1,159 @@
+body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.title-contact {
+    font-family: Playfair Display, serif;
+    font-size: 60px;
+    color: #000;
+    margin: 50px auto;
+}
+.sub-title-contact {
+    font-weight: lighter;
+    font-size: 35px;
+    margin: 10px auto 70px;
+    color: #000;
+}
+.three-contacts {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    width: 200px;
+    text-align: center;
+}
+.box span {
+    font-size: 20px;
+}
+.box img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 70px;
+}
+/* formulaire */
+form {
+    width: 50%;
+    margin: 100px auto 50px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.3);
+}
+form h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 10px 0 20px;
+}
+.label-input {
+    display: block;
+    font-size: 20px;
+    margin: 10px 0 10px 10px;
+}
+.label-input:nth-child(1) {
+    margin-top: 20px;
+}
+input[type="text"],
+input[type="number"] {
+    display: block;
+    width: 90%;
+    margin: 10px 10px 20px;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 18px;
+    border: 1px solid #000;
+}
+.title-check {
+    display: inline;
+    font-size: 20px;
+    padding: 0 10px;
+}
+.groupe-check {
+    display: inline;
+}
+.labels-check {
+    font-size: 18px;
+}
+input[type="checkbox"] {
+    display: inline;
+    border: none;
+    border-radius: 2px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+label[for="txt"] {
+    font-size: 22px;
+    display: block;
+    text-align: left;
+    margin: 30px 10px 20px;
+}
+textarea {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    display: block;
+    width: 90%;
+    height: 200px;
+    resize: none;
+    margin: 10px 10px 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+form button {
+    display: block;
+    margin: 10px auto 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #000;
+    transition: transform 0.2s ease-in-out;
+}
+form button:hover {
+    transform: scale(1.2);
+}
+/* responsive */
+@media screen and (max-width: 800px) {
+    .title-contact {
+        font-size: 50px;
+        text-align: center;
+        margin: 30px auto 20px;
+        padding: 0 15px;
+    }
+    .sub-title-contact {
+        font-size: 25px;
+        margin: 10px auto 40px;
+        padding: 0 15px;
+    }
+    .title-check {
+        font-size: 20px;
+        margin: 0px auto 20px;
+
+    }
+    .three-contacts {
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        margin: 20px auto;
+    }
+    .box img {
+        width: 50px;
+    }
+    form {
+        width: 90%;
+        margin: 60px auto 50px;
+    }
+    form h2 {
+    font-size: 30px;
+}
+    .groupe-check {
+        display: block;
+        font-size: 20px;
+        margin: 10px 0 10px 10px;
+    }
+}

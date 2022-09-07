@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/contact.css" />
+        <title>Contact</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="menu">
+            <h2 class="title-menu">Menu</h2>
+            <ul class="list-menu">
+                <li class="item-nav">
+                    <a href="../index.html">Accueil</a>
+                </li>
+                <li class="item-nav">
+                    <a href="./pages/informations.html">Informations</a>
+                </li>
+                <li class="item-nav">
+                    <a href="./pages/portfolio.html">Tous nos biens</a>
+                </li>
+                <li class="item-nav">
+                    <a href="./pages/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- contact -->
+        <h1 class="title-contact">Entrons en contact</h1>
+        <p class="sub-title-contact">
+            Contactez-nous par email, par téléphone ou par la poste !
+        </p>
+        <div class="three-contacts">
+            <div class="box">
+                <img src="../ressources/placeholder.svg" alt="" />
+                <span>9 rue des Tonneliers 75016 Paris</span>
+            </div>
+            <div class="box">
+                <img src="../ressources/phone-call.svg" alt="" />
+                <span>01 02 03 04 05</span>
+            </div>
+            <div class="box">
+                <img src="../ressources/email.svg" alt="" />
+                <span>contact@heracles.com</span>
+            </div>
+        </div>
+        <!-- formulaire -->
+        <form>
+            <h2>Parlez-nous de vos envies</h2>
+            <!-- input prenom -->
+            <label for="prenom" class="label-input">Votre prénom</label>
+            <input
+                type="text"
+                name="prenom"
+                id="prenom"
+                placeholder="Votre prénom"
+            />
+            <!-- input nom -->
+            <label for="nom" class="label-input">Votre nom</label>
+            <input type="text" name="nom" id="nom" placeholder="Votre nom" />
+            <!-- input tel -->
+            <label for="tel" class="label-input">Votre téléphone</label>
+            <input
+                type="number"
+                name="tel"
+                id="tel"
+                placeholder="Votre téléphone"
+            />
+            <!-- checkbox -->
+            <p class="title-check">Type de biens :</p>
+            <div class="groupe-check">
+                <label for="louer" class="labels-check">Louer</label>
+                <input type="checkbox" name="louer" id="louer" />
+            </div>
+            <div class="groupe-check">
+                <label for="acheter" class="labels-check">Acheter</label>
+                <input type="checkbox" name="acheter" id="acheter" />
+            </div>
+            <!-- textarea -->
+            <label for="txt">Message</label>
+            <textarea
+                name="txt"
+                id="txt"
+                cols="30"
+                rows="10"
+                placeholder="Votre message..."
+            ></textarea>
+            <!-- btn -->
+            <button type="submit">Envoyez</button>
+        </form>
+        <!-- footer -->
+        <footer>Tous droits réservés &copy 2022</footer>
+    </body>
+</html>
