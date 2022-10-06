@@ -374,3 +374,126 @@ footer {
         height: 35px;
     }
 }
+
+/* === section cookie === */
+#cookieModal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+}
+#cookieModal.active {
+    display: flex;
+}
+#cookieContent {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cookieContent img {
+    display: block;
+    width: 100px;
+    margin: 30px 0 10px 0;
+}
+#cookieContent p {
+    text-align: justify;
+    color: #333;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 30px;
+}
+#cookieContent a {
+    font-size: 20px;
+    text-decoration: none;
+}
+.hide {
+    visibility: hidden;
+    bottom: 0;
+    right: 2em;
+}
+.show {
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+}
+/* btn */
+#acceptCookie,
+#refusedCookie {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 1px solid var(--main-black);
+    border-radius: 3px;
+}
+#acceptCookie {
+    color: var(--main-white);
+    background-color: limegreen;
+    transition: 0.2s ease-in-out;
+}
+#acceptCookie:hover {
+    color: #f1f1f1;
+    font-weight: bold;
+    background-color: rgb(26, 106, 26);
+    transition: 0.2s ease-in-out;
+}
+#refusedCookie {
+    color: var(--main-white);
+    background-color: crimson;
+    margin-left: 15px;
+    transition: 0.2s ease-in-out;
+}
+#refusedCookie:hover {
+    color: #f1f1f1;
+    font-weight: bold;
+    background-color: darkred;
+    transition: 0.2s ease-in-out;
+}
+/* show popup */
+@media only screen and (max-width: 750px) {
+    #cookieContent p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    #cookieContent a {
+        font-size: 20px;
+    }
+    #cookieContent img {
+        width: 60px;
+        margin: 20px auto;
+    }
+    #cookiePopup {
+        width: 100%;
+    }
+    .hide {
+        bottom: 2em;
+        right: 0;
+    }
+    .show {
+        right: 0;
+        bottom: 0;
+    }
+    #acceptCookie,
+    #refusedCookie {
+        width: 150px;
+        height: 40px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
